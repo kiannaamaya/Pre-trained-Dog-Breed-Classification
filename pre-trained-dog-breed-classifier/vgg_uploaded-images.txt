@@ -1,0 +1,73 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:              Turtle_01.png.jpg  label:                     turtle
+ 2 key:               Phone_01.png.jpg  label:                      phone
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                 french bulldog
+
+ NOT A MATCH:
+
+             Turtle_01.png.jpg: 
+Real:                     turtle   Classifier:                       terrapin
+
+              Phone_01.png.jpg: 
+Real:                      phone   Classifier:        laptop, laptop computer
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                      chihuahua
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                 french bulldog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+             Turtle_01.png.jpg: 
+Real:                     turtle   Classifier:                       terrapin  
+PetLabelDog: 0  ClassLabelDog: 0
+
+              Phone_01.png.jpg: 
+Real:                      phone   Classifier:        laptop, laptop computer  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+{'n_dogs_img': 2, 'n_match': 1, 'n_correct_dogs': 2, 'n_correct_notdogs': 2, 'n_correct_breed': 1, 'n_images': 4, 'n_notdogs_img': 2, 'pct_match': 25.0, 'pct_correct_dogs': 100.0, 'pct_correct_breed': 50.0, 'pct_correct_notdogs': 100.0}
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+
+Results from using CNN model architecture: VGG
+Number of images 4
+Number of dog images 2
+Number of 'not a dog' images 2
+Percentage of match: 25.0
+Percentage of correct dogs: 100.0
+Percentage of correct breed: 50.0
+Percentage of correct notdogs: 100.0
+Pet image label for misclassified breed: dog and Classifier label for misclassified breed: chihuahua
+
+** Total Elapsed Runtime: 0:0:4
