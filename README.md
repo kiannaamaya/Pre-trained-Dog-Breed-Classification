@@ -1,4 +1,4 @@
-# Pre-trained-Dog-Breed-Classification
+# Pre-trained-Dog-Breed-Classifier
 
 This repository is associated with code from the Udacity AI Programming with Python Nanodegree program. 
 
